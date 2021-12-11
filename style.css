@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&display=swap');
+
+                        /* ————— ROOT ————— */
+
+:root {
+        /* ————— COLORS ————— */
+    --red: #8E2A2A;
+    --gold-01: #DFC090;
+    --gold-02: #765F3D;
+    --black: #000000;
+}
+
+
+                        /* ————— BODY ————— */
+
+body {
+    background-color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+                        /* ————— TEXT ————— */
+
+.header1 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    color: var(--gold-01);
+}
+
+.maintext {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--black);
+}
+
+.bodytext {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--black);
+}
+
+.subtitle {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--gold-02);
+}
+
+
+
+                    /* ————— IMAGENS ————— */
+
+.img01 {
+    width: 100%;
+}
+
+
+                        /* ————— HEADER ————— */
+
+header {
+    background-color: var(--red);
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+                        /* ————— SECTION ————— */
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+            /* ————— SECTION 0 ————— */
+
+#section0 {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--black);
+    margin-bottom: 100px;
+}
+
+#section0a {
+    width: 75%;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 96px;
+    color: var(--gold-02);
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+
+
+    /* —— BUTTON/MENU — SECTION 0 B —— */
+
+.container {
+    width: 25%;
+    margin-top: 60px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    text-align: right;
+} 
+
+.button {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: white;
+    text-align: right;
+    font-size: 18px;
+}
+
+.button:hover, .button.active {
+    padding-bottom: 5px;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-color: var(--black);
+    color: var(--gold-02);
+}
+
+ .content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+    font-size: 16px;
+}
+
+
+            /* ————— SECTION 01 ————— */
+
+#section01 {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+#section01a {
+    width: 42%;
+    padding-left: 3%;
+    padding-right: 5%;
+}
+
+#section01b {
+    width: 50%;
+}
+
+#section01b2, #section01b4 {
+    width: 72%;
+    padding-left: 14%;
+    padding-right: 14%;
+}
+
+
+
+            /* ————— SECTION 02 ————— */
+
+#section02 {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+#section02a {
+    width: 36%;
+    padding-left: 3%;
+    padding-right: 11%;
+}
+
+#section02b {
+    width: 36%;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+
+
+            /* ————— SECTION 03 ————— */
+
+#section03 {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+#section03a {
+    width: 36%;
+    padding-left: 3%;
+    padding-right: 11%;
+}
+
+    /* —— SLIDESHOW — SECTION 3 B —— */
+
+.slideshow-container {
+    width: 50%;
+    padding: 0%;
+}
+
+.slides {
+    display: none; 
+}
+
+#section03b1 {
+    width: 100%;
+    text-align: center;
+}
+
+.previous-slide, .next-slide {
+    padding: 16px;
+    color: var(--gold-02);
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.previous-slide:hover, .next-slide:hover {
+    color: var(--gold-01);
+}
